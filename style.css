@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+   
+
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+    color: #000000;
+    background: rgb(255, 255, 255);
+   
+    font-family: "Josefin Sans", sans-serif;
+}
+
+header {
+    display: flex;
+    backdrop-filter: blur(5px) ;
+    height: 20%;
+    justify-content: space-between;
+    list-style-type: none;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgb(154, 154, 154) ;
+}
+
+.navigation {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    justify-content: space-between;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 2px;
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+
+.list {
+    list-style: none;
+}
+
+.navotsikko {
+    padding-left: 10px;
+}
+
+.navigation ul {
+    padding-left: 15vh;
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        display: flex;
+        padding: 1%;
+        justify-content: flex-end;
+
+    }
+
+    .navigation ul {
+        padding-left: 3vh;
+    }
+    
+    .firstdiv {
+        padding-top: 2px;
+    }
+}
+
+.card {
+    height: 50vh;
+    width: 60%;
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 25%;
+    box-shadow: 0px 8px 20px rgb(154, 154, 154) ;
+}
+
+.nextplayer {
+    backdrop-filter: blur(7px);
+    background-color: none;
+    background: none;
+    color: rgb(0, 0, 0);
+    margin-top:20px ;
+    border-radius: 10px;
+    border: solid rgb(0, 0, 0) 1px;
+}
+
+.ion-icon {
+    font-size: 20px;
+    color: rgb(56, 211, 250);
+}
+
+.firstdiv{
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 8px 20px rgb(154, 154, 154) ;
+    height: 20vh;
+    padding-top: 5.5vh;
+    font-size: 22px;
+    
+}
+
+.wow {
+    color: rgb(56, 211, 250);
+}
+
+.onegame, .gametwo, .gamethree  {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgb(154, 154, 154) ;
+    height: 20vh;
+}
+
+.gamesec {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.gametwo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.onegame {
+    display: flex;
+    
+}
+
+.gamethree {
+    display: flex;
+    
+}
+
+.ion-icon1 {
+    font-size: 50px;
+    padding: 50px;
+    box-shadow: 0px 8px 20px rgb(154, 154, 154) ;
+    border-radius: 10px;
+    color: rgb(56, 211, 250);
+    font-size: 50px;
+}
+
+.erinlainen {
+    color: black;
+
+}
+
+.ion-icon2 {
+    font-size: 50px;
+    padding: 50px;
+    box-shadow: 0px 8px 20px rgb(154, 154, 154) ;
+    border-radius: 10px;
+}
+
+.pelilinkki {
+    color: black;
+    text-decoration: none;
+    justify-content: space-between;
+    text-align: center;
+}
