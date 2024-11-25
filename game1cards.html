@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kuka Eniten?</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 <body>
 
-    <!--Erillinen header osio pelille-->
+    <!--Header part for games-->
     <header>
     <h1 class="navotsikko">Kuka Eniten?</h1>
-    <button class="lopeta-nappi"><a href="index.html">X</a></button>
+    <a href="index.html"><button class="lopeta-nappi">X</button></a>
     </header>
 
-    <!--Pelikortin ja vaihtavan napin luonti-->
-    <div class="card">
+    <!--Cards and playbutton making-->
+    <div class="card" id="gamecard">
+        <br><br><br><br>
      <h4 class="cardText" id="cardText">Kuka Eniten?</h4>
     </div>
      
@@ -28,7 +30,14 @@
         <a href="#" class="peliloppui"><button>Täältä</button></a>
     </div>
 
-    <!--Pelilogiikka scriptit-->
+    <footer>
+        <h2 class="navotsikko">Night<span class="wow">Out</span></h2>
+        <!--Making social icons, for links-->
+        <a href="#"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon class="social-icon" name="logo-github"></ion-icon></a>
+    </footer>
+
+    <!--Gamelogic scripts-->
     <script src="main.js"></script>
 
 </body>
