@@ -29,42 +29,7 @@
     </div>
 
     <!--Pelilogiikka scriptit-->
-    <script>
-        // Tekstivaihtoehdot
-        const vaihtoehdot = [
-            "Teksti on nyt vaihdettu!",
-            "Tämä on uusi satunnainen teksti.",
-            "Kolmas vaihtoehto tässä.",
-            "Yllätyksiä löytyy aina!",
-            "Viides vaihtoehto, ole hyvä!"
-        ];
-
-        // Käytettävissä olevat tekstit (alussa kaikki vaihtoehdot)
-        let kayttamattomat = [...vaihtoehdot];
-
-        // Hae HTML-elementit
-        const nappi = document.getElementById("nextplayer");
-        const teksti = document.getElementById("cardText");
-
-        // Lisää tapahtumakuuntelija napille
-        nappi.addEventListener("click", () => {
-            // Jos kaikki tekstit on käytetty
-            if (kayttamattomat.length === 0) {
-                teksti.textContent = "Kaikki tekstit on käyty läpi!";
-                return;
-            }
-
-            // Valitse satunnainen teksti jäljellä olevista vaihtoehdoista
-            const satunnainenIndeksi = Math.floor(Math.random() * kayttamattomat.length);
-            const valittuTeksti = kayttamattomat[satunnainenIndeksi];
-
-            // Näytä valittu teksti
-            teksti.textContent = valittuTeksti;
-
-            // Poista valittu teksti käytettävissä olevien joukosta
-            kayttamattomat.splice(satunnainenIndeksi, 1);
-        });
-    </script>
+    <script src="main.js"></script>
 
 </body>
 </html>
