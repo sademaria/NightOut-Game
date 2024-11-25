@@ -65,6 +65,18 @@ a {
     .firstdiv {
         padding-top: 2px;
     }
+
+    .ion-icon1 {
+        display: none;
+    }
+
+    .kuvaus {
+        padding-right: 2vh;
+    }
+
+    .firstdiv {
+        padding: 2vh;
+    }
 }
 
 .card {
@@ -124,7 +136,6 @@ a {
 
 .gametwo {
     display: flex;
-    justify-content: flex-end;
 }
 
 .onegame {
@@ -140,9 +151,10 @@ a {
 .ion-icon1 {
     font-size: 50px;
     padding: 50px;
-    box-shadow: 0px 8px 20px rgb(154, 154, 154) ;
+    width: 50px;
+    height: auto;
     border-radius: 10px;
-    color: rgb(56, 211, 250);
+    color: rgb(0, 0, 0);
     font-size: 50px;
 }
 
@@ -154,13 +166,43 @@ a {
 .ion-icon2 {
     font-size: 50px;
     padding: 50px;
-    box-shadow: 0px 8px 20px rgb(154, 154, 154) ;
+    width: 50px;
+    height: auto;
     border-radius: 10px;
 }
 
 .pelilinkki {
     color: black;
     text-decoration: none;
-    justify-content: space-between;
     text-align: center;
+
+}
+
+.kuvaus {
+    padding-left: 10px;
+    margin-left: 2vh;
+    text-align: justify;
+
+    h1 {
+        color: rgb(56, 211, 250);
+    }
+}
+
+.whysection {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgb(154, 154, 154) ;
+    text-align: center;
+    padding-top:7px ;
+    margin-top: 20px;
+    padding: 10px;
+
+}
+
+footer {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgb(154, 154, 154) ;
+    display: flex;
+    height: 15vh;
 }
