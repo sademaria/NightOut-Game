@@ -38,7 +38,127 @@
     </footer>
 
     <!--Gamelogic scripts-->
-    <script src="main.js"></script>
+    <script src="main.js">
+    
+    const vaihtoehdot = [
+        "Kuka viettää eniten aikaa katsellen kissojen tai koirien videoita?",
+        "Kuka matkustaa eniten ympäri maailmaa, jos saisi mahdollisuuden?",
+        "Kuka unohtaa eniten laittaa viestin ennen kuin saapuu paikalle?",
+        "Kuka on eniten ensimmäisenä tanssilattialla?",
+        "Kuka syö eniten irtokarkkeja yhdellä kertaa?",
+        "Kuka keksii eniten tekosyitä välttääkseen treenaamisen?",
+        "Kuka käyttää eniten rahaa vaatteisiin?",
+        "Kuka lähettää eniten ääniviestejä?",
+        "Kuka kuuntelee eniten samaa kappaletta uudelleen ja uudelleen?",
+        "Kuka unohtaa eniten päivittää kalenterinsa?",
+        "Kuka nukkuu eniten päiväunia?",
+        "Kuka nauraa eniten silloin, kun ei saisi nauraa?",
+        "Kuka ottaa eniten kuvia kaikesta ympärillään?",
+        "Kuka käyttää eniten aikaa ruokakaupassa miettien, mitä ostaa?",
+        "Kuka vaihtaa eniten mielipidettään päivän aikana?",
+        "Kuka juo eniten teetä tai mehua päivän aikana?",
+        "Kuka on eniten kiinnostunut vanhoista valokuvista?",
+        "Kuka tekee eniten spontaaneja ostoksia?",
+        "Kuka on eniten herkkä elokuville tai TV-sarjoille?",
+        "Kuka viettää eniten aikaa ulkona luonnossa?",
+        "Kuka selittää eniten asioita liian monisanaisesti?",
+        "Kuka unohtelee eniten salasanojaan?",
+        "Kuka yrittää eniten välttää konfliktitilanteita?",
+        "Kuka herää eniten liian aikaisin viikonloppuisin?",
+        "Kuka pyytää eniten apua teknologian kanssa?",
+        "Kuka suunnittelee eniten illanviettoja etukäteen?",
+        "Kuka nauttii eniten yksin vietetyistä hetkistä?",
+        "Kuka on eniten kiinnostunut kokeilemaan uusia ruokia?",
+        "Kuka jättää eniten tiskit pesemättä?",
+        "Kuka käyttää eniten aikaa sisustusideoiden miettimiseen?",
+        "Kuka lähettää eniten kuvia itsestään ystäville?",
+        "Kuka huolestuu eniten asioista, jotka eivät koskaan tapahdu?",
+        "Kuka valvoo eniten myöhään tekemättä mitään erityistä?",
+        "Kuka käyttää eniten rahaa juhlakoristeisiin?",
+        "Kuka unohtaa eniten ottaa sateenvarjon mukaansa?",
+        "Kuka on eniten valmis kokeilemaan uutta urheilulajia?",
+        "Kuka käyttää eniten aikaa keskustellen puhelimessa?",
+        "Kuka käyttää eniten aikaa selaten vanhoja viestejä?",
+        "Kuka tuo eniten yllätyksiä ystävilleen?",
+        "Kuka käyttää eniten aikaa juhlien suunnitteluun?",
+        "Kuka viettää eniten aikaa pelaamalla videopelejä?",
+        "Kuka kertoo eniten hauskoja mutta liioiteltuja tarinoita?",
+        "Kuka on eniten kiinnostunut tähtien tai avaruuden tutkimisesta?",
+        "Kuka hymyilee eniten päivän aikana?",
+        "Kuka ehdottaa eniten illanistujaisia?",
+        "Kuka herkuttelee eniten juuri ennen nukkumaanmenoa?",
+        "Kuka laulaa eniten suihkussa?",
+        "Kuka käyttää eniten aikaa selaillen kirjakaupan hyllyjä?",
+        "Kuka viettää eniten aikaa miettien menneitä?",
+         "Kuka on eniten myöhässä sovituista tapaamisista?",
+        "Kuka syö eniten herkkuja viikon aikana?",
+        "Kuka unohtaa aina, missä heidän avaimensa ovat?",
+        "Kuka shoppailee eniten verkkokaupoissa?",
+        "Kuka käyttää eniten aikaa somessa?",
+        "Kuka nauraa eniten omille vitseilleen?",
+        "Kuka syö useimmin ruokaa suoraan pakkauksesta?",
+        "Kuka tekee eniten yllättäviä päätöksiä?",
+        "Kuka tanssii eniten, kun kukaan ei katso?",
+        "Kuka on eniten huolissaan pikkuasioista?",
+        "Kuka käyttää eniten aikaa peilin edessä?",
+        "Kuka lähettää eniten meemejä muille?",
+        "Kuka nukahtaa eniten elokuvan aikana?",
+        "Kuka puhuu eniten unissaan?",
+        "Kuka unohtaa eniten vastata viesteihin?",
+        "Kuka googlaa eniten outoja asioita?",
+        "Kuka ostaa eniten tavaroita, joita ei koskaan käytä?",
+        "Kuka viettää eniten aikaa kylpyhuoneessa?",
+        "Kuka eksyy eniten, vaikka olisi kartta?",
+        "Kuka on eniten kiinni puhelimessaan?",
+        "Kuka juo eniten kahvia päivän aikana?",
+        "Kuka kertoo eniten samat tarinat uudelleen?",
+        "Kuka unohtaa eniten ihmisten nimiä?",
+        "Kuka tilaa eniten ruokaa kotiin?",
+        "Kuka tuhlaa eniten aikaa Netflixin valikoimaa selaten?",
+        "Kuka harrastaa eniten itselleen uusia projekteja, joita ei koskaan tee loppuun?",
+        "Kuka on eniten innokas karaokeen?",
+        "Kuka syö eniten jäätelöä yhdellä istumalla?",
+        "Kuka viettää eniten aikaa järjestellessään jotain, mitä ei tarvitse järjestää?",
+        "Kuka on eniten halukas muuttamaan suunnitelmia lennosta?",
+        "Kuka kadottaa eniten tavaroitaan?",
+        "Kuka käyttää eniten aikaa matkasuunnitelmien tekoon?",
+        "Kuka puhuu eniten säästä?",
+        "Kuka kertoo eniten vitsejä, joita kukaan ei ymmärrä?",
+        "Kuka on eniten valmis pelaamaan lautapelejä koko illan?",
+        "Kuka on eniten kiinnostunut eläimistä?",
+        "Kuka syö eniten suklaata yhdellä istumalla?",
+        "Kuka menee eniten nukkumaan liian myöhään?",
+        "Kuka on eniten kilpailuhenkinen?",
+        "Kuka puhuu eniten omasta lapsuudestaan?",
+        "Kuka viettää eniten aikaa selaamalla verkkokauppoja ostamatta mitään?",
+        "Kuka on eniten innokas aloittamaan uusia harrastuksia?",
+        "Kuka kirjoittaa eniten listoja ja suunnitelmia?",
+        "Kuka viettää eniten aikaa juhlista ottaen selfieitä?",
+        "Kuka unohtaa eniten, mitä he olivat tekemässä?",
+        "Kuka kuluttaa eniten aikaa matkalla väärään suuntaan?",
+        "Kuka on eniten valmis lähtemään spontaanille matkalle?",
+        "Kuka on eniten tunnettu myöhästyjä?",
+        "Kuka käyttää eniten rahaa kahviloissa?",
+        "Kuka on eniten tunnettu epätodennäköisistä tarinoista?"
+    ];
+    
+    // lets choose the unused texts
+     let kayttamattomat = [...vaihtoehdot];
+    
+    // Hae HTML-elementit
+    const next = document.getElementById("nextplayer");
+    const Text = document.getElementById("cardText");
+    
+    // Add Eventlistenet to the button
+    next.addEventListener("click", () => {
+        // Choose the random text
+        const satunnainenIndeksi = Math.floor(Math.random() * vaihtoehdot.length);
+        teksti.textContent = vaihtoehdot[satunnainenIndeksi];
+        // Delete the used gamecards
+        kayttamattomat.splice(satunnainenIndeksi, 1);
+    });
+    
+    </script>
 
 </body>
 </html>
